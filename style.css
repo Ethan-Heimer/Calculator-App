@@ -1,0 +1,156 @@
+:root{
+    --colorOne: #FFC759;
+    --colorOneHover: #ffd176;
+
+    --colorTwo: #FF7B9C;
+    --colorTwoHover: #ff93ae;
+
+    --colorThree: #607196;
+    --colorThreeHover: #747f99;
+
+    --colorFour: #BABFD1;
+    --colorFourHover: #caccd5;
+
+    --colorFive: #E8E9ED;
+    --colorFiveHover: #ffffff;
+
+    --boxShadow: #3d465a;
+
+    --backgroundColor: #292f3d;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: 'Fredoka One', cursive;
+}
+
+body{
+    height: 100vh;    
+    display: grid;
+    place-items: center;
+
+    background-color: var(--backgroundColor);
+}
+
+#buttonContainer{
+    display: grid;
+
+    grid-template-areas: 
+    'display display display display'
+    'one two three plus'
+    'four five six minus'
+    'seven eight nine mult'
+    'openP zer0 closeP divide'
+    'dec del clear result';
+
+    width: 30vw;
+    min-width: fit-content;
+
+    height: 75vh;
+
+    gap: 1vw;
+
+    background-color: var(--colorThree);
+    padding: 1vw;
+    border-radius: 10px;
+
+    box-shadow: 3px 3px 10px var(--boxShadow);
+}
+
+#display{
+    grid-area: display;
+
+    background-color: var(--colorFour);
+    border-radius: 5px;
+
+    height: 10vh;
+
+    font-size: xx-large;
+    padding: 1vw;
+}
+
+.button{
+    background-color: var(--colorFive);
+    border: none;
+    border-radius: 5px;
+    font-size: x-large;
+
+    min-width: 75px;
+
+    transition: .1s;
+
+    box-shadow: 3px 3px 3px var(--boxShadow);
+}
+
+.button:hover{
+    scale: 1.05;
+    box-shadow: 3px 3px 7px var(--boxShadow);
+}
+
+
+
+.colorOne{
+    background-color: var(--colorOne);
+}
+
+.colorOne:hover{
+    background-color: var(--colorOneHover);
+}
+
+.colorTwo{
+    background-color: var(--colorTwo);
+}
+
+.colorTwo:hover{
+    background-color: var(--colorTwoHover);
+}
+
+.colorThree{
+    background-color: var(--colorThree);
+}
+
+.colorFour{
+    background-color: var(--colorFour);
+}
+
+.colorFive{
+    background-color: var(--colorFive);
+}
+
+.colorFive:hover{
+    background-color: var(--colorFiveHover);
+}
+
+.textWhite{
+    color:white;
+}
+
+#one{grid-area: one;}
+#two{grid-area: two;}
+#three{grid-area: three;}
+#four{grid-area: four;}
+#five{grid-area: five;}
+#six{grid-area: six;}
+#seven{grid-area: seven;}
+#eight{grid-area: eight;}
+#nine{grid-area: nine;}
+#zero{grid-area: zer0;}
+
+#add{grid-area: plus;}
+#sub{grid-area: minus;}
+#mult{grid-area: mult;}
+#divide{grid-area: divide;}
+
+#openP{grid-area: openP;}
+#closeP{grid-area: closeP;}
+
+#decimal{grid-area: dec;}
+#del{grid-area: del;}
+
+#result{grid-area: result;}
+#clear{grid-area: clear;}
+
+

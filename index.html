@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id = "calculator">
+        <div id = "buttonContainer">
+            <div id="display"></div>
+
+            <button class="button colorFive" id="one" onclick="addInput('1')">1</button>
+            <button class="button colorFive" id="two" onclick="addInput('2')">2</button>
+            <button class="button colorFive" id="three" onclick="addInput('3')">3</button>
+            <button class="button colorFive" id="four" onclick="addInput('4')">4</button>
+            <button class="button colorFive" id="five" onclick="addInput('5')">5</button>
+            <button class="button colorFive" id="six" onclick="addInput('6')">6</button>
+            <button class="button colorFive" id="seven" onclick="addInput('7')">7</button>
+            <button class="button colorFive" id="eight" onclick="addInput('8')">8</button>
+            <button class="button colorFive" id="nine" onclick="addInput('9')">9</button>
+            <button class="button colorFive" id="zero" onclick="addInput('0')">0</button>
+
+            <button class="button colorFive" id="openP" onclick='addInput("(")'>(</button>
+            <button class="button colorFive" id="closeP" onclick='addInput(")")'>)</button>
+
+            <button class="button colorTwo textWhite" id="decimal" onclick='addInput(".")'>.</button>
+            <button class="button colorTwo textWhite" id="del" onclick='deleteInput()'>del</button>
+
+            <button class="button colorOne textWhite" id="add" onclick="addInput('+')">+</button>
+            <button class="button colorOne textWhite" id="sub" onclick="addInput('-')">-</button>
+            <button class="button colorOne textWhite" id="mult" onclick="addInput('*')">*</button>
+            <button class="button colorOne textWhite" id="divide" onclick="addInput('/')">/</button>
+
+            <button class="button colorTwo textWhite" id="result" onclick="solve()">=</button>
+            <button class="button colorTwo textWhite" id="clear" onclick="setInput(' ')">c</button>
+        </div>
+    </div>
+    
+
+    <script src ="calculator.js"></script>
+</body>
+</html>
